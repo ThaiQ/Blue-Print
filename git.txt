@@ -1,0 +1,26 @@
+Check for status:
+git status
+
+Add changes files:
+git add [name of file]
+
+remove changed files:
+git checkout [name of file]
+
+Clone:
+git clone [URL]
+
+Commit/Push:
+git commit -m "message"
+git push origin [name of branch]
+
+Check Branches:
+git branch
+Create Branch:
+git checkout -b [name of branch]
+Delete Branch:
+git branch -d [name of branch]
+Change Branch:
+git checkout [name of branch]
+Delete Branch on web:
+git push origin :[name of your new branch]
