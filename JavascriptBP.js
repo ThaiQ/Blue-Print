@@ -1,11 +1,17 @@
 //print
 console.log("print");
 console.dir('return object, properties');
+alert('pop-up');
 
 //function
 function print(a){
   console.log(a);
 }
+
+//Type Conversion
+var float = parseFloat();
+String(float);
+float.toString();
 
 //Call DOM from Html
 document.getElementsByClassName('ArrayClassName');
@@ -31,30 +37,3 @@ var target = document.getElementById('id123');
 el.style.cssText = "width:200px; height:200px; color:red; background:yellow";
 document.body.appendChild (el);
 document.body.insertBefore (el, target );
-
-//module
-module.exports.VariableName = NameOfVariableOrActualFunctionAndVariable;
-var variable = require('./other export name');
-variable.NameofFuntion();
-//event+util
-var variable = require('events');
-var variable = require('util');
-util.inherits(objectVar, event.EventEmitter);
-
-//read file
-var fs = require('fs');
-var variable = fs.readFileSync('text.txt', 'utf8');
-//writeNewFile
-fs.writeFileSync('nameNewFile',variableOrcontent);
-//noBlockingCode
-fs.readFile('text.txt','utf8', function(err, data){});
-fs.writeFile('text.txt',content);
-
-//Directory, create delete
-fs.mkdirSync('name.whatever');
-fs.rmdirSync('name.whatever');
-//noBlockingCode
-fs.mkdir('name.whatever');
-fs.rmdir('name.whatever');
-//alsoRemove
-fs.unlink('./dir');
