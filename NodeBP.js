@@ -48,4 +48,4 @@ streamR.on('data', function(chunk){
   streamW.write(chunk);
 });
 //pipe: auto write (same as abovr event)
-streamR.pipe(streamR);
+streamR.pipe(responseOrData);

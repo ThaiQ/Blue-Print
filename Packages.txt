@@ -1,0 +1,9 @@
+NodeJS
+    Utilities server
+ExpressJS
+    Easy link_url and server
+JSON
+    Output script, data
+EJS
+    Injecting JS properties to HTML, inverse
+    <%= %> data            <% %> JS
