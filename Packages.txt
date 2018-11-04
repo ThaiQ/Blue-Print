@@ -1,0 +1,25 @@
+NodeJS
+    Utilities server
+ExpressJS
+    Easy link_url and server
+JSON
+    Output script, data
+EJS
+    Injecting JS properties to HTML, inverse
+    <%= %> data            <% %> JS
+MongoDB
+    Data Base handler
+    mlab
+      user/acc: ThaiQ
+      pass: thai2000
+	mongoimport --db database --collection profiles --file [dir or name]
+	mongod: start port
+	turbo devserver: start server
+	mongo, show dbs - database check
+Turbo360
+	Server Handler
+
+NPM
+	npm install [name]
+	npm init
+		npm install [name] -save
