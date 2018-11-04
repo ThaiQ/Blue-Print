@@ -1,3 +1,6 @@
+Git initialize
+git init
+
 Check for status:
 git status
 
@@ -24,3 +27,6 @@ Change Branch:
 git checkout [name of branch]
 Delete Branch on web:
 git push origin :[name of your new branch]
+
+Git remove local repository
+rm -rf .git
