@@ -33,8 +33,9 @@ var http = require('http');
 var statusNumber = 200;
 var port = 1234;
 var server = http.createServer(function(request, response){
-  response.writeHead (statusNumber, {'Content-Type': 'text/plain'})
+  response.writeHead (statusNumber, {'Content-Type': 'text/plain'}) //type
   response.end("message, response");
+  request.url;
 });
 server.listen(port, '10.0.0.19');
 
@@ -46,3 +47,5 @@ var streamW = fs.createWriteStream(__dirname + '/outPut.txt')
 streamR.on('data', function(chunk){
   streamW.write(chunk);
 });
+//pipe: auto write (same as abovr event)
+streamR.pipe(responseOrData);
