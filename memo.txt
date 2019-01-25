@@ -1,2 +1,5 @@
 ML - tensor flow
 Data - Kaggle
+python-panda = import data set
+
+Git Large File Storage: https://git-lfs.github.com/
