@@ -30,3 +30,6 @@ git push origin :[name of your new branch]
 
 Git remove local repository
 rm -rf .git
+
+Git Large File Storage:
+git lfs
