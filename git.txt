@@ -27,6 +27,8 @@ Change Branch:
 git checkout [name of branch]
 Delete Branch on web:
 git push origin :[name of your new branch]
+Delete local branch 
+git branch -d [name]
 
 Git remove local repository
 rm -rf .git
