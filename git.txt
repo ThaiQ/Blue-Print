@@ -1,34 +1,56 @@
+
+/////////////Init////////////////////
 Git initialize
 git init
 
-Check for status:
+**Check for status:
 git status
 
-Add changes files:
+**Add changes files:
 git add [name of file]
 
-remove changed files:
+*remove changed files:
 git checkout [name of file]
 
 Clone:
 git clone [URL]
 
-Commit/Push:
+
+
+
+
+///////////Commit/Push//////////////////
 git commit -m "message"
+        if "git commit" -> vim open
+                              exit and save by ":wq" enter
 git push origin [name of branch]
+        or "git push" -> may work depending on admin
 
 Check Branches:
 git branch
+
+
+
+
+///////////////Branches///////////////////
 Create Branch:
 git checkout -b [name of branch]
+
 Delete Branch:
 git branch -d [name of branch]
+
 Change Branch:
 git checkout [name of branch]
-Delete Branch on web:
-git push origin :[name of your new branch]
-Delete local branch 
-git branch -d [name]
+
+
+
+
+///////////////Delete////////////////////////
+Delete Origin Branch (web)
+git push --delete [remote name] [branch name]
+
+Delete local branch
+git branch -d [branch name]
 
 Git remove local repository
 rm -rf .git

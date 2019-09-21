@@ -104,9 +104,24 @@ letterToNumber(letter){
 		return false;
 	}
 
-	clear(){
-		console.log("clean")
-		this.board=this.board_Origin;
+	//Fill an entire row~ r,a,123456789
+	//Fill an entire col~ c,1,123456789
+	fill(line){
+		if (line.length != (13))return false;
+		let array = line.split(",");
+
+		if(array.length==3){
+		if(array[0]=='r'){
+			let row=this.letterToNumber(array[1]);
+			for (let i = 0; i<9; i++)
+				this.board[row][i]=parseInt(array[2].charAt(i));
+		}
+
+		if(array[0]=='c'){
+			let col=parseInt(array[1])-1;
+			for (let i = 0; i<9; i++)
+				this.board[i][col]=parseInt(array[2].charAt(i));
+		}}
 	}
 
 }

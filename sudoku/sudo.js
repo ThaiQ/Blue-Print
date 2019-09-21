@@ -59,9 +59,14 @@ while (userInput != "exit" && methods.check()==false){
   else if (userInput == "help"){
     console.log("ColumnRow-Number: use format to set number to the board")
     console.log("     Ex: 1a-1 will set column 1, row a to 1")
+    console.log("     ex: r,a,123456789")
     console.log("status : check for completion");
     console.log("print : print game board");
     console.log("exit : exit game");
+  }
+  else if (userInput.charAt(0) == 'r' || userInput.charAt(0) == 'c'){
+    methods.fill(userInput);
+    methods.print();
   }
   else if (userInput.length == 4 && userInput.charAt(2)=="-"){
     methods.inputBoard(userInput);
